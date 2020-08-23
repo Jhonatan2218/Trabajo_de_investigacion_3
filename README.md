@@ -46,7 +46,7 @@ Cloud IoT Core es un servicio completamente administrado que le permite conectar
 ### Sencillez
 Google pretende hacer más sencillo el uso de los dispositivos IoT y el tratamiento de los datos que éstos recogen proporcionando la infraestructura y los servicios que el usuario necesite para administrar esos datos, utilizando los servicios de software de Google.
 
-### Acelera la agilidad empresarial.
+### Acelera la agilidad.
 
 Consigue información útil en tiempo real para tu negocio sobre dispositivos repartidos por todo el mundo, ya estén en el perímetro o en la nube, gracias a los completos servicios de Google Cloud IoT. Cloud IoT Core recopila datos de los dispositivos, que más tarde se publican en Cloud Pub/Sub para las analíticas del downstream.
 
