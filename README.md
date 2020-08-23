@@ -67,6 +67,7 @@ El puente de protocolos proporciona puntos de conexión para los protocolos con 
 ### Ámbitos de aplicación.
 
 • Mantenimiento predictivo: Consiste en la predicción de forma automatizada de cuándo se debe realizar el mantenimiento, optimización de su rendimiento en tiempo real, anticipación de los periodos inactivos, detección de anomalías y monitorización del estado y la ubicación de los dispositivos.
+
 • Monitorización de recursos en tiempo real: La plataforma permite monitorizar los recursos valiosos en tiempo real, ejecutar análisis complejos y procesos de aprendizaje automático en los datos recopilados y mostrar el estado de una empresa para aportar métricas útiles.
 
 
