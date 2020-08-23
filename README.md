@@ -71,7 +71,7 @@ El puente de protocolos proporciona puntos de conexión para los protocolos con 
 • Monitorización de recursos en tiempo real: La plataforma permite monitorizar los recursos valiosos en tiempo real, ejecutar análisis complejos y procesos de aprendizaje automático en los datos recopilados y mostrar el estado de una empresa para aportar métricas útiles.
 
 
-### 5. DIAGRAMAS
+### 5. DIAGRAMAS.
 
 
 ### 6. MAPA DE VARIABLES
