@@ -99,6 +99,7 @@ Regresamos a la platafirma de Google en la parte de "CREAR UN DISPOSITIVO" y int
 
 Regresamos a la parte de OPC Router en la pestaña de Google IoT e ingresamos los datos ID de proyecto,ID de registro,Región,ID de dispositivo que fueron proporcinados despues de la creacion de dispositivo en la seccion anterior.
 ![](Imagenes/MQQT2.png)
+
 Establecemos la conexion y hacemos click en el boton check conecction si todo esta bien no saltara el mensaje de conexion establecida.
 
 Conexión en OPC Router que simula el valor de temperatura de un sensor.
