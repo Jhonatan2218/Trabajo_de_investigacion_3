@@ -80,16 +80,21 @@ El puente de protocolos proporciona puntos de conexión para los protocolos con 
 ### 7. EXPLICACIÓN DEL CÓDIGO FUENTE
 
 ### Envió de datos por Protocolo MQTT.
-Como primer paso debemos crear un proecto en Google Cloud Plataform y configurar como lo deseemos, debemos tener muy encuenta el nombre del registro que coloquemos, el servidor, el id del proyecto, asi tambien del id del dispositivo que agregemos ya que estos datos nos serviran mas adelante.
 
+Como primer paso debemos crear un proyecto en Google Cloud Plataform y configurar como lo deseemos, debemos tener muy encuenta el nombre del registro que coloquemos, el servidor, el id del proyecto, asi tambien del id del dispositivo que agregemos ya que estos datos nos serviran mas adelante.
+
+![](Imagenes/Interfaz1.png)
 
 Una vez ya configurada nuestro proyecto con su respectivo registro que nos incluye los protocolos de comunicacion,entramos al apartado de dispositivos y lo dejamos pendiente.
+![](Imagenes/Intefaz2.png)
 
 ### OPC Router
-
+![](Imagenes/OPC.png)
 Ingresamos a OPC Router y creamos un complemento de MQTT en la parte de plug-ins,  en este apartado configuraremos la parte del enrutado, colocando el nombre y el perfil de la nube en este caso Google IoT,El perfil de la nube noa facilitara la introducción de los datos de conexión específicos de Google para la conexión MQTT.
 Después de eso, hacemos clic en la pestaña "Google IoT" para  crear un certificado, luego a detalles y copiamos nuestro archivo y lo configuramos segun nuestro necesidad.
+![](Imagenes/MQQT1.png)
 
+![](Imagenes/MQQT2.png)
 
 Regresamos a la platafirma de Google en la parte de "CREAR UN DISPOSITIVO" y introducimos el ID de dispositivo que nos declaramos en el paso anterior. Utilizaremos el formato "RS256_X509 y expotaremos el certificado creado por OPC Router.
 
