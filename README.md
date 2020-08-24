@@ -104,8 +104,8 @@ Establecemos la conexion y hacemos click en el boton check conecction si todo es
 Conexión en OPC Router que simula el valor de temperatura de un sensor.
 
 Cuando tengamos la conexión ya establecida procederemos a elaborar nuestro proyecto en la aplicación de OPC Router, estableciendo el tipo de dato que enviaremos y nuestro protocolo de comunicación.Esta parte la realizaremos en conexiones.
-Una vez ya establecido nuestro flujo arrastraremos varios componetentes que estan disponibles como Json Write que es el formato que se enviara a la nube, MQTT sera el protocolo de comunicacion entre OPC Router y Google Cloud, en esta seccion colocaremos el nombre de nuestro proyecto, el certificado , y el servidor, el tipo de dato que se enviara y la ruta del topic.
-las otras variables son del tiempo de ejecucion y una constante que este vinculada al database.
+Una vez ya establecido nuestro flujo arrastraremos varios componetentes que estan disponibles como Json Write que es el formato que se enviara a la nube, MQTT sera el protocolo de comunicacion entre OPC Router y Google Cloud, en esta seccion colocaremos el nombre de nuestro proyecto, el certificado , y el servidor, el tipo de dato que se enviara y la ruta del topic.las otras variables son del tiempo de ejecucion y una constante que este vinculada al database.
+
 ![](Imagenes/Flujograma.png)
 
 Guardaremos y exportaremos.
