@@ -79,6 +79,46 @@ El puente de protocolos proporciona puntos de conexión para los protocolos con 
 
 ### 7. EXPLICACIÓN DEL CÓDIGO FUENTE
 
+### Envió de datos por Protocolo MQTT.
+Como primer paso debemos crear un proecto en Google Cloud Plataform y configurar como lo deseemos, debemos tener muy encuenta el nombre del registro que coloquemos, el servidor, el id del proyecto, asi tambien del id del dispositivo que agregemos ya que estos datos nos serviran mas adelante.
+
+
+Una vez ya configurada nuestro proyecto con su respectivo registro que nos incluye los protocolos de comunicacion,entramos al apartado de dispositivos y lo dejamos pendiente.
+
+### OPC Router
+
+Ingresamos a OPC Router y creamos un complemento de MQTT en la parte de plug-ins,  en este apartado configuraremos la parte del enrutado, colocando el nombre y el perfil de la nube en este caso Google IoT,El perfil de la nube noa facilitara la introducción de los datos de conexión específicos de Google para la conexión MQTT.
+Después de eso, hacemos clic en la pestaña "Google IoT" para  crear un certificado, luego a detalles y copiamos nuestro archivo y lo configuramos segun nuestro necesidad.
+
+
+Regresamos a la platafirma de Google en la parte de "CREAR UN DISPOSITIVO" y introducimos el ID de dispositivo que nos declaramos en el paso anterior. Utilizaremos el formato "RS256_X509 y expotaremos el certificado creado por OPC Router.
+
+
+Regresamos a la parte de OPC Router en la pestaña de Google IoT e ingresamos los datos ID de proyecto,ID de registro,Región,ID de dispositivo que fueron proporcinados despues de la creacion de dispositivo en la seccion anterior.
+
+Establecemos la conexion y hacemos click en el boton check conecction si todo esta bien no saltara el mensaje de conexion establecida.
+
+Conexión en OPC Router que simula el valor de temperatura de un sensor
+Cuando tengamos la conexión ya establecida procederemos a elaborar nuestro proyecto en la aplicación de OPC Router, estableciendo el tipo de dato que enviaremos y nuestro protocolo de comunicación.Esta parte la realizaremos en conexiones.
+Una vez ya establecido nuestro flujo arrastraremos varios componetentes que estan disponibles como Json Write que es el formato que se enviara a la nube, MQTT sera el protocolo de comunicacion entre OPC Router y Google Cloud, en esta seccion colocaremos el nombre de nuestro proyecto, el certificado , y el servidor, el tipo de dato que se enviara y la ruta del topic.
+las otras variables son del tiempo de ejecucion y una constante que este vinculada al database.
+Guardaremos y exportaremos.
+
+Para verificar si que la conexión se estableció nos dirigiremos a la plataforma Google Cloud, en el apartado de dispositivos nos aparecerá la "comunicación permitida", si es así la conexión fue un éxito, esta de color verde.
+
+Como paso final abrimos la consola o shell que se encuentra en la parte superior derecha y procederemos a escribir los siguientes comandos.
+Comando para visualizar la lista disponible “gcloud pubsub topics list”:
+Comando para suscribirse al tema “gcloud pubsub subscriptions create mySubscription –topic projects/opc-router-project/topics/
+Leer el último registro de datos transferido: gcloud pubsub subscriptions pull –auto-ack
+y nos debe arrojar el siguiente resultado.
+
+
+
+
+
+
+
+
 
 ### 8. CONCLUSIONES
 
