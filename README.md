@@ -72,7 +72,7 @@ El puente de protocolos proporciona puntos de conexión para los protocolos con 
 
 
 ### 5. DIAGRAMAS.
-
+![](Imagenes/diagrama.png)
 
 ### 6. MAPA DE VARIABLES
 
