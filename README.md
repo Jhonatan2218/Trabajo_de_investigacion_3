@@ -94,13 +94,11 @@ Ingresamos a OPC Router y creamos un complemento de MQTT en la parte de plug-ins
 Después de eso, hacemos clic en la pestaña "Google IoT" para  crear un certificado, luego a detalles y copiamos nuestro archivo y lo configuramos segun nuestro necesidad.
 ![](Imagenes/MQQT1.png)
 
-![](Imagenes/MQQT2.png)
-
 Regresamos a la platafirma de Google en la parte de "CREAR UN DISPOSITIVO" y introducimos el ID de dispositivo que nos declaramos en el paso anterior. Utilizaremos el formato "RS256_X509 y expotaremos el certificado creado por OPC Router.
-
+![](Imagenes/Dispositivo.png)
 
 Regresamos a la parte de OPC Router en la pestaña de Google IoT e ingresamos los datos ID de proyecto,ID de registro,Región,ID de dispositivo que fueron proporcinados despues de la creacion de dispositivo en la seccion anterior.
-
+![](Imagenes/MQQT2.png)
 Establecemos la conexion y hacemos click en el boton check conecction si todo esta bien no saltara el mensaje de conexion establecida.
 
 Conexión en OPC Router que simula el valor de temperatura de un sensor.
@@ -108,15 +106,21 @@ Conexión en OPC Router que simula el valor de temperatura de un sensor.
 Cuando tengamos la conexión ya establecida procederemos a elaborar nuestro proyecto en la aplicación de OPC Router, estableciendo el tipo de dato que enviaremos y nuestro protocolo de comunicación.Esta parte la realizaremos en conexiones.
 Una vez ya establecido nuestro flujo arrastraremos varios componetentes que estan disponibles como Json Write que es el formato que se enviara a la nube, MQTT sera el protocolo de comunicacion entre OPC Router y Google Cloud, en esta seccion colocaremos el nombre de nuestro proyecto, el certificado , y el servidor, el tipo de dato que se enviara y la ruta del topic.
 las otras variables son del tiempo de ejecucion y una constante que este vinculada al database.
+![](Imagenes/Flujograma.png)
+
 Guardaremos y exportaremos.
 
 Para verificar si que la conexión se estableció nos dirigiremos a la plataforma Google Cloud, en el apartado de dispositivos nos aparecerá la "comunicación permitida", si es así la conexión fue un éxito, esta de color verde.
+![](Imagenes/Conexion.png)
 
 Como paso final abrimos la consola o shell que se encuentra en la parte superior derecha y procederemos a escribir los siguientes comandos.
 Comando para visualizar la lista disponible “gcloud pubsub topics list”:
 Comando para suscribirse al tema “gcloud pubsub subscriptions create mySubscription –topic projects/opc-router-project/topics/
 Leer el último registro de datos transferido: gcloud pubsub subscriptions pull –auto-ack
 y nos debe arrojar el siguiente resultado.
+![](Imagenes/consola.png)
+![](Imagenes/resultado1.png)
+
 
 
 
