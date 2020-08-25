@@ -180,6 +180,7 @@ cd nodejs-docs-samples/iot/mqtt_example
 ![](Imagenes/Comando2.png)
 
 Tendremos que copiar la clave privada en la carpeta con el siguiente comando:
+
 cp ../../../rsa_private.pem .
 
 ![](Imagenes/Comando3.png)
@@ -189,6 +190,37 @@ Luego se instalarán las dependencias del nodo con el siguiente comando:
 npm install
 
 ![](Imagenes/Comando4.png)
+
+Lo siguiente será crear una suscripción PUB/SUB con el siguiente comando:
+
+gcloud pubsub subscriptions create \
+    projects/”ID de nuestro Proyecto”/subscriptions/my-subscription \
+    --topic=projects/”ID de nuestro Proyecto”/topics/my-device-events
+    
+![](Imagenes/Subscripcion.png)
+
+Ejecute el siguiente comando para conectar un dispositivo virtual a Cloud IoT Core mediante el puente MQTT, sustituyendo el ID de su proyecto:
+
+node cloudiot_mqtt_example_nodejs.js \
+    mqttDeviceDemo \
+    --projectId=”ID de nuestro Proyecto”/ \
+    --cloudRegion=”Región de nuestro Registro” \
+    --registryId=”ID de nuestro registro” \
+    --deviceId=“ID de nuestro dispositivo” \
+    --privateKeyFile=rsa_private.pem \
+    --numMessages=25 \
+    --algorithm=RS256
+
+![](Imagenes/Conexion1.png)
+
+Ejecute el siguiente comando para leer los mensajes publicados en el tema de telemetría, sustituyendo su ID de proyecto:
+
+gcloud pubsub subscriptions pull --auto-ack \
+    projects/”ID de nuestro Proyecto”/subscriptions/my-subscription
+
+![](Imagenes/Impreion%20de%20datos.png)
+
+Repita el comando de extracción de suscripciones para ver mensajes adicionales.
 
 ### 8. CONCLUSIONES
 
