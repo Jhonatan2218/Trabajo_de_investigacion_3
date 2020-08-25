@@ -146,7 +146,7 @@ y nos debe arrojar el siguiente resultado.
 •	En muchos de los casos para poder observar los resultados o interactuar con todas las funciones que nos ofrece Google con esta plataforma, ademas dse nuestro computador, se recomienda tener alcance a cierta infraestructura como dispositivos que sean capaces de conectarse a internet y tener la capacidad de procesar iformacion para cumplir con tareas especificas que permitan replicar los resultados que se quieren obtener en el mundo real. 
 
 ### 10. CRONOGRAMA
-
+![](Imagenes/Cronograma.png)
 
 ### 11. BIBLIOGRAFÍA
 
