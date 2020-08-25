@@ -218,7 +218,7 @@ Ejecute el siguiente comando para leer los mensajes publicados en el tema de tel
 gcloud pubsub subscriptions pull --auto-ack \
     projects/”ID de nuestro Proyecto”/subscriptions/my-subscription
 
-![](Imagenes/Impreion%20de%20datos.png)
+![](Imagenes/Impresion%20de%20datos.png)
 
 Repita el comando de extracción de suscripciones para ver mensajes adicionales.
 
