@@ -1,0 +1,26 @@
+
+1)https://github.com/GoogleCloudPlatform/nodejs-docs-samples
+
+2)cd nodejs-docs-samples/iot/mqtt_example
+
+3)cp ../../../rsa_private.pem .
+
+4)npm install
+
+5)gcloud pubsub subscriptions create \
+    projects/prueba2-287417/subscriptions/my-subscription \
+    --topic=projects/prueba2-287417/topics/my-device-events
+
+
+6) node cloudiot_mqtt_example_nodejs.js \
+    mqttDeviceDemo \
+    --projectId=prueba2-287417 \
+    --cloudRegion=us-central1 \
+    --registryId=Trab-3 \
+    --deviceId=my-device \
+    --privateKeyFile=rsa_private.pem \
+    --numMessages=25 \
+    --algorithm=RS256
+
+7)gcloud pubsub subscriptions pull --auto-ack \
+    projects/prueba2-287417/subscriptions/my-subscription
