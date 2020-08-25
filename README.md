@@ -142,5 +142,13 @@ y nos debe arrojar el siguiente resultado.
 
 ### 11. BIBLIOGRAFÍA
 
+Cangrejo Aguirre, D. C. (2019). Sistema de apoyo a la prevención del abigeato de ganado bovino utilizando tecnologías IoT y Cloud. (Universidad Santo Tomas) Recuperado el 2020 de 08 de 25, de https://repository.usta.edu.co/handle/11634/17515
+
+Daniel Rodríguez, J. R. (30 de DICIEMBRE de 2017). Un enfoque para la integración de dispositivos IoT en el desarrollo de SIG en la nube. (Universidad de Cuenca) Recuperado el 2020 de 08 de 24, de https://publicaciones.ucuenca.edu.ec/ojs/index.php/maskana/article/view/1966
+
+Deepti Gupta, S. B. (20 de mayo de 2020). Modelo de control de acceso para Google Cloud IoT. (Universidad de Texas en San Antonio) Recuperado el 2020 de 08 de 24, de https://ieeexplore.ieee.org/document/9123054/figures#figures
+
+Pinzón Niño, D. L. (2015). Panorama de aplicación de internet de las cosas (IoT). (Universidad Santo Tomas) Recuperado el 2020 de 08 de 24, de https://repository.usta.edu.co/handle/11634/672
+
 
 ### 12. ANEXOS
