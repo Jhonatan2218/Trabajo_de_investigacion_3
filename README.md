@@ -152,3 +152,18 @@ Pinzón Niño, D. L. (2015). Panorama de aplicación de internet de las cosas (I
 
 
 ### 12. ANEXOS
+### Manual de Usuario
+
+![](Imagenes/ManualdeUsu1.png)
+
+![](Imagenes/ManualdeUsu2.png)
+
+![](Imagenes/ManualdeUsu3.png)
+
+![](Imagenes/ManualdeUsu4.png)
+
+![](Imagenes/ManualdeUsu5.png)
+
+![](Imagenes/ManualdeUsu6.png)
+
+![](Imagenes/ManualUsuOPC.png)
