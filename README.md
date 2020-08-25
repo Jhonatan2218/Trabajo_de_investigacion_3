@@ -95,9 +95,11 @@ Después de eso, hacemos clic en la pestaña "Google IoT" para  crear un certifi
 ![](Imagenes/MQQT1.png)
 
 Regresamos a la platafirma de Google en la parte de "CREAR UN DISPOSITIVO" y introducimos el ID de dispositivo que nos declaramos en el paso anterior. Utilizaremos el formato "RS256_X509 y expotaremos el certificado creado por OPC Router.
+
 ![](Imagenes/Dispositivo.png)
 
 Regresamos a la parte de OPC Router en la pestaña de Google IoT e ingresamos los datos ID de proyecto,ID de registro,Región,ID de dispositivo que fueron proporcinados despues de la creacion de dispositivo en la seccion anterior.
+
 ![](Imagenes/MQQT2.png)
 
 Establecemos la conexion y hacemos click en el boton check conecction si todo esta bien no saltara el mensaje de conexion establecida.
@@ -154,16 +156,16 @@ Pinzón Niño, D. L. (2015). Panorama de aplicación de internet de las cosas (I
 ### 12. ANEXOS
 ### Manual de Usuario
 
-![](Imagenes/ManualdeUsu1.png)
+![](Anexos/ManualdeUsu1.png)
 
-![](Imagenes/ManualdeUsu2.png)
+![](Anexos/ManualdeUsu2.png)
 
-![](Imagenes/ManualdeUsu3.png)
+![](Anexos/ManualdeUsu3.png)
 
-![](Imagenes/ManualdeUsu4.png)
+![](Anexos/ManualdeUsu4.png)
 
-![](Imagenes/ManualdeUsu5.png)
+![](Anexos/ManualdeUsu5.png)
 
-![](Imagenes/ManualdeUsu6.png)
+![](Anexos/ManualdeUsu6.png)
 
-![](Imagenes/ManualUsuOPC.png)
+![](Anexos/ManualUsuOPC.png)
